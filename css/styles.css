@@ -1,30 +1,59 @@
 :root {
-  --color-primary: #2e2f42;
-  --color-action: #404bbf;
-  --color-brand-link: #434455;
-  --color-brand-nav-link: #2e2f42;
-  --color-background: #f4f4f4;
+  --color-dark: #2e2f42;
+  --color-pressed-states: #404bbf;
+  --color-text: #434455;
+  --color-primary-brand: #4d5ae5;
+  --color-white-background: #ffffff;
+  --color-light: #f4f4fd;
+  --color-accent: #e7e9fc;
+  --color-subtle-text: #8e8f99;
+  --color-modal-overlay: #2e2f4266;
+  --color-hero-background: #2e2f42;
+  --color-modal-background: #fcfcfc;
 }
 body {
-  color: var(--color-primary);
+  color: var(--color-dark);
   font-family: 'Roboto', 'Raleway', sans-serif;
-  background-color: var(--color-background);
+  background-color: var(--color-white-background);
+}
+.hero-title {
+  color: var(--color-white-background);
+  text-align: center;
+  font-family: inherit;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1.07143;
+  letter-spacing: 1.12px;
+}
+.link.logo {
+  color: var(--color-primary-brand);
+  font-family: Raleway;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.16667;
+  letter-spacing: 0.54px;
+  text-transform: uppercase;
+}
+.logo-part {
+  color: var(--color-dark);
+}
+.logo-part-footer{
+  color: var(--color-light)
 }
 
 .link {
-  color: var(--color-brand-link);
+  color: var(--color-text);
   text-decoration: none;
-  font-family: Roboto;
+  font-family: inherit;
   font-size: 16px;
-  font-style: normal;
   line-height: 1.5;
   letter-spacing: 0.32px;
 }
 
 .nav-link {
-  color: var(--color-brand-nav-link);
+  color: var(--color-dark);
   text-decoration: none;
-  font-family: Roboto;
+  font-family: inherit;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
@@ -33,22 +62,79 @@ body {
 
 .nav-link:hover,
 .nav-link:focus {
-  color: var(--color-action);
+  color: var(--color-pressed-states);
 }
 
 .link:hover {
-  color: var(--color-action);
+  color: var(--color-pressed-states);
 }
 .link-active {
-  color: var(--color-action);
-}
-.brand-section {
-  background-color: var(--color-brand-lite);
-}
-.button {
-  cursor: pointer;
+  color: var(--color-pressed-states);
 }
 
-ul {
+.button {
+  cursor: pointer;
+  color: var(--color-primary-brand);
+  text-align: center;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.64px;
+  background-color: var(--color-light);
+}
+.button:hover,
+.button:focus {
+  color: var(--color-white-background);
+  background-color: var(--color-pressed-states);
+}
+.button:active{
+  background-color: var(--color-pressed-states);
+}
+.list {
   list-style-type: none;
+}
+.card-text {
+  color: var(--color-dark);
+  font-family: inherit;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.4px;
+}
+.text {
+  color: var(--color-text);
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.32px;
+}
+.text-footer {
+  color: var(--color-light);
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.32px;
+}
+.text-title {
+  color: var(--color-dark);
+  text-align: center;
+  font-family: inherit;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11111;
+  letter-spacing: 0.72px;
+  text-transform: capitalize;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
