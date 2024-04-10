@@ -1,0 +1,54 @@
+:root {
+  --color-primary: #2e2f42;
+  --color-action: #404bbf;
+  --color-brand-link: #434455;
+  --color-brand-nav-link: #2e2f42;
+  --color-background: #f4f4f4;
+}
+body {
+  color: var(--color-primary);
+  font-family: 'Roboto', 'Raleway', sans-serif;
+  background-color: var(--color-background);
+}
+
+.link {
+  color: var(--color-brand-link);
+  text-decoration: none;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: 0.32px;
+}
+
+.nav-link {
+  color: var(--color-brand-nav-link);
+  text-decoration: none;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.32px;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--color-action);
+}
+
+.link:hover {
+  color: var(--color-action);
+}
+.link-active {
+  color: var(--color-action);
+}
+.brand-section {
+  background-color: var(--color-brand-lite);
+}
+.button {
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+}
